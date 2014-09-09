@@ -2,8 +2,43 @@
 
 body {
   text-align: center;
-  font-family: sans-serif; 
-  padding-bottom: 20px;
+  font-family: "Source Code Pro", "Ricty", "MigMix 1M", "Migu 1M", "ＭＳ ゴシック", "MS Gothic" monospace; 
+  padding: 10px 10px 45px;
+  background-color: #111111;
+  color: #00DD22;
+  line-height: 1.5;
+}
+
+a,
+a:visited {
+  display: inline-block;
+  color: #EEEE00;
+  margin: .2em .2em .2em 0;
+  padding: 0 .2em;
+  border: 1px solid #CCCC00;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  border-color: #FFFF00;
+  background-color: #FFFF00;
+  color: #111111;
+  text-decoration: none;
+}
+
+p,ul,ol {
+  margin: 0 0 1.5em;
+}
+
+p {
+  margin: 0 0 1.5em;
+}
+
+li {
+  margin: 0 0 .5em;
+  line-height: 1.3;
+  list-style-type: square;
 }
 
 h1 {
@@ -14,7 +49,84 @@ h1 {
   text-transform: uppercase;
   text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
   padding: 350px 0 10px;
-  margin: 0; }
+  margin: 0;
+  line-height: 1.5;
+}
+
+table {
+  width: 100%;
+  max-width: 960px;
+  margin: 0;
+  border: 0 none;
+}
+
+table td {
+  padding: 1em;
+  background-color: #111111;
+  border: 2px dashed #00BB00;
+  line-height: 1.75;
+}
+
+table th,
+table td:first-child {
+  padding: 1em;
+  border: 2px dashed #00BB00;
+  color: #00FFFF;
+  font-weight: normal;
+  white-space: nowrap;
+  vertical-align: top;
+}
+
+table table {
+  width: auto;
+  max-width: 100%;
+  margin: 0;
+  border: 0 none;
+}
+
+table table th,
+table table td:first-child {
+  color: #00DD22;
+}
+
+
+/* smartphone */
+
+@media (max-width: 767px) {
+
+img:first-child {
+  width: 100%;
+  max-width: 620px;
+  height: auto;
+}
+
+table {
+  display: block;
+}
+
+table td {
+  border-top: 0 none;
+}
+
+table td,
+table th,
+table td:first-child {
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+table td:last-child table tr:first-child {
+  display: none;
+}
+
+
+}
+
+
+
+
+
 
 .doc {
   font-size: 14px;
