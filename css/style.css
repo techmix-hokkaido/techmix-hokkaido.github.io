@@ -1,0 +1,394 @@
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	vertical-align:baseline;
+	list-style:none;
+}
+
+
+body {
+	line-height:1.8;
+	text-align:center;
+	color:#333;
+	font-size: 10px;
+	font-family:'Montserrat',"Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","メイリオ",Meiryo,sans-serif;
+	background: url(../img/bg_wrapper.png);
+	letter-spacing: 0.1em;
+}
+
+img{
+	vertical-align:bottom;
+}
+
+a {
+	display: inline-block;
+	margin:0;
+	padding:0;
+	vertical-align:baseline;
+	background:transparent;
+	text-decoration: none;
+	color:#9fd3e8;
+	-webkit-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+}
+
+a:hover, a:focus, a:active {
+	-webkit-transform: translateY(-3px);
+	transform: translateY(-3px);
+}
+
+hr {
+	display:block;
+	height:1px;
+	border:0;
+	margin:1em 0;
+	padding:0;
+}
+
+input, select {
+	vertical-align:middle;
+}
+
+
+/* clear
+----------------------------------------------------*/
+.clear:after{
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+.clear{ display: inline-block; }
+/* exlude MacIE5 \*/
+* html .clear{ height: 1% }
+.clear{display:block;}
+/* end MacIE5 */
+
+
+/* header
+----------------------------------------------------*/
+.header{
+	background: url(../img/bg_header.png) repeat-x center top;
+}
+
+.header_inner{
+	background: url(../img/bg_inner.png) no-repeat center top;
+	max-width: 1500px;
+	height: 590px;
+	margin: 0 auto;
+}
+
+.header h1{
+	padding: 90px 0 30px 0;
+}
+
+
+.entry a{
+	display: block;
+	width: 220px;
+	margin: 0 auto;
+	color: #fff;
+	background: #343d47;
+	padding: 15px 0;
+	font-size: 1.6em;
+	letter-spacing: 0.1em;
+}
+
+.header .mainimg{
+	margin-top: -30px;
+	display: none;
+}
+
+/* glnav
+----------------------------------------------------*/
+.glnav{
+	background: url(../img/bg_nav.png) repeat-x bottom;
+	padding:0 0 50px 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.glnav ul{
+	padding: 30px 0 0 0;
+	background: #F5F9FA;
+}
+
+.glnav ul li{
+	display: inline-block;
+	padding:0 15px;
+	font-size: 1.6em;
+	letter-spacing: 0.05em;
+}
+
+.glnav ul li.last a{
+	color: #f1709e;
+}
+
+.glnav ul li a{
+	color: #343d47;
+}
+
+.glnav.fixed{
+	position: fixed;
+	top: 0px;
+	left: 0px
+}
+
+/* contents
+----------------------------------------------------*/
+.main{
+	position: relative;
+}
+
+
+.section{
+	max-width: 1000px;
+	margin:0 auto;
+	padding: 50px 0;
+	text-align: left;
+	color: #fff;
+	font-size: 1.5em;
+}
+
+.section h1{
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 30px;
+	font-size: 2.0em;
+	letter-spacing: 0.1em;
+	color: #e4d1af;
+}
+
+.section h1 span{
+	display: block;
+	font-size: 0.5em;
+	color: #fff;
+}
+
+.section p{
+	margin-bottom: 20px;
+}
+
+.section dl{
+	max-width: 700px;
+	margin: 0 auto;
+	border-bottom: 1px solid #a49f9c;
+}
+
+.section dt{
+	clear: left;
+	float: left;
+	width: 150px;
+	border-top: 1px solid #a49f9c;
+	padding: 10px 0;
+}
+
+.section dd{
+	float: left;
+	width: 550px;
+	border-top: 1px solid #a49f9c;
+	padding: 10px 0;
+}
+
+.speaker{
+	border-bottom: 1px solid #a49f9c;
+}
+
+.speaker li{
+	border-top: 1px solid #a49f9c;
+	padding: 20px 0 20px 290px;
+	min-height: 100px;
+}
+
+.speaker .speaker-ph{
+	float: left;
+	width: 100px;
+	height: 100px;
+	margin-right: 20px;
+	margin-left: -290px;
+}
+
+.speaker .speaker-ph img{
+	border: 5px solid #a49f9c;
+	border-radius: 100%;
+}
+
+.speaker .speaker-name{
+	float: left;
+	width: 150px;
+	line-height: 90px;
+	margin-right: 20px;
+	margin-left: -170px;
+	text-align: center;
+}
+
+.speaker .speaker-comment{
+	float: left;
+	width: 100%;
+}
+
+#googlemap{
+	max-width: 1000px;
+	height: 400px;
+}
+
+.sns{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 100px;
+	background:url(../img/bg_sns.png) no-repeat bottom;
+	padding-bottom: 110px;
+}
+
+.sns ul{
+	background:rgba(249,252,252,0.7);
+	padding: 15px;
+	border-radius: 5px;
+}
+
+.sns ul li{
+	font-size: 1.4em;
+	line-height: 1;
+	margin-bottom: 5px;
+}
+
+.sns ul li.twitter iframe{
+	width: 70px!important;
+}
+
+.sns .facebook{
+	margin-bottom: 0;
+}
+
+.footer{
+	color: #fff;
+	font-size: 1.2em;
+	margin-bottom: 20px;
+}
+
+@media screen and (max-width: 720px) {
+.header h1 img{
+	width: 100%;
+}
+.glnav ul li{
+	padding: 0 10px;
+	font-size: 1.4em;
+}
+
+.section p,.section ul{
+	padding: 0 10px;
+}
+
+.section dt{
+	float: none;
+	width: auto;
+	border-top: 1px solid #a49f9c;
+	border-bottom: 1px dotted #a49f9c;
+	padding: 10px;
+	background: #6B5F52;
+	background: rgba(255,255,255,0.15);
+}
+
+.section dd{
+	float: none;
+	width: auto;
+	border-top: none;
+	padding: 10px;
+}
+
+.section .speaker ul,.section .speaker{
+	padding: 0;
+}
+
+.speaker li{
+	padding: 20px 10px;
+}
+
+.speaker .speaker-ph{
+	float: none;
+	width: 100px;
+	height: auto;
+	margin:0 auto 10px auto;
+}
+
+.speaker .speaker-name{
+	float: none;
+	width: 100%;
+	line-height:1;
+	margin:0 auto 20px auto;
+	text-align: center;
+}
+
+.speaker .speaker-comment{
+	float: none;
+	width: 100%;
+}
+
+.header_inner{
+	height:auto;
+}
+
+.header h1{
+	padding:30px 10px 20px 10px;
+}
+
+.header .mainimg {
+	display: block;
+	margin-top:10px;
+}
+
+.header .mainimg img{
+	width: 100%;
+	height: auto;
+}
+
+.header_inner{
+	background: none;
+}
+}
+
+@media screen and (max-width: 1240px) {
+.sns{
+	position: relative;
+	top:auto;
+	right: auto;
+	bottom: auto;
+	left: auto;
+	width:300px;
+	margin: 0 auto 20px auto;
+}
+
+.sns ul li{
+	display: inline-block;
+	padding: 0 5px;
+	vertical-align: middle;
+}
+
+.sns ul li.facebook{
+	vertical-align: top;
+}
+
+.fb_iframe_widget > span {
+  vertical-align: baseline !important;
+}
+}
