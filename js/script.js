@@ -9,9 +9,9 @@ $(function(){
 		};
 		var map = new google.maps.Map(document.getElementById("googlemap"), myOptions);
 		var marker = new google.maps.Marker({
-			position: new google.maps.LatLng(43.063621,141.355319),
+			position: new google.maps.LatLng(43.062161,141.355555),
 			map: map,
-			title: ""
+			title: "札幌市民ホール"
 		});
 	}
 	initialize();
